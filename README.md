@@ -1,7 +1,5 @@
 # Terminal Profile Setup (zsh)
 
-![showcase](demo.gif)
-
 ## Notes
 
 > How to dump current terminal profiles.
@@ -68,6 +66,3 @@ source ~/.zshrc
 mydevice
 ```
 
-### GIF recorder
-
-[Peek](https://github.com/phw/peek)
