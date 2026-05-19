@@ -50,15 +50,3 @@ This script will install two zsh plugins that I like to use: [auto-complete](htt
 ```
 
 
-### [neofetch](https://github.com/dylanaraps/neofetch)
-
-```bash
-sudo apt-get install neofetch
-
-# add alias to .zshrc
-echo "alias mydevice='neofetch --ascii_colors 6 7 --colors 2 2 2 2'" >> ~/.zshrc
-source ~/.zshrc
-
-mydevice
-```
-
