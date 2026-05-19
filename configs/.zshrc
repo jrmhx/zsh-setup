@@ -2,12 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=~/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="my-agnoster"
+#ZSH_THEME="my-agnoster"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -66,6 +66,10 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# Shell Prompt Engine OhMyPosh Setup (https://ohmyposh.dev/)
+export PATH="$HOME/.local/bin:$PATH"
+eval "$(oh-my-posh init zsh --config '~/.config/ohmyposh/zen.toml')"
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -94,11 +98,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-alias mydevice='neofetch --ascii_colors 6 7 --colors 2 2 2 2'
